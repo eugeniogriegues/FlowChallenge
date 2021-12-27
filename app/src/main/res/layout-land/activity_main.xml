@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context="view.MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentDetail"
+        android:layout_width="373dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toEndOf="@+id/fragmentContainer" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAnterior"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/fragmentContainer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="2dp"
+        android:background="#F44336"
+        android:text="@string/btnAnterior"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSiguiente"
+        android:layout_width="150dp"
+
+        android:layout_height="60dp"
+        android:layout_below="@+id/fragmentContainer"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toLeftOf="@+id/fragmentDetail"
+        android:layout_toRightOf="@id/btnAnterior"
+        android:background="#8BC34A"
+        android:text="@string/btnSiguiente"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FlowChallenge</string>
+    <string name="btnAnterior">ANTERIOR</string>
+    <string name="btnSiguiente">SIGUIENTE</string>
+    <string name="ftxtFragment_1">FRAGMENT 1</string>
+    <string name="ftxtFragment_2">FRAGMENT 2</string>
+    <string name="title_activity_item_detail_host">ItemDetailHostActivity</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="contentDescription">IMAGEN PREVIEW</string>
+</resources>
